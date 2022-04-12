@@ -155,7 +155,7 @@ jobs:
       - name: Confirm Successful Preview Deployment
         uses: docker://curlimages/curl:7.82.0
         with:
-          args: --retry 5 --retry-all-errors --retry-delay 0 --fail --location ${{ steps.preview.outputs.url }}
+          args: --retry 12 --retry-all-errors --retry-delay 0 --fail --location ${{ steps.preview.outputs.url }}
 
       # If PR, put deployment URL and ID in the PR comments
       - name: Find comment for deployment URL

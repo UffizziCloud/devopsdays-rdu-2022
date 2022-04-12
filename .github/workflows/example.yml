@@ -1,4 +1,4 @@
-name: Example Workflow
+name: create uffizzi preview environment
 
 on:
   push:

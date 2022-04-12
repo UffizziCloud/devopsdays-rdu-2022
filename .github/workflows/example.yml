@@ -28,7 +28,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: uffizzi/example-voting-app-vote
+          images: uffizzi/devopsdays-rdu-2022-vote
       - name: Build and Push Image to Docker Hub
         uses: docker/build-push-action@v2
         with:
@@ -54,7 +54,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: uffizzi/example-voting-app-worker
+          images: uffizzi/devopsdays-rdu-2022-worker
       - name: Build and Push Image to Docker Hub
         uses: docker/build-push-action@v2
         with:
@@ -80,7 +80,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: uffizzi/example-voting-app-result
+          images: uffizzi/devopsdays-rdu-2022-result
       - name: Build and Push Image to Docker Hub
         uses: docker/build-push-action@v2
         with:
@@ -106,7 +106,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: uffizzi/example-voting-app-loadbalancer
+          images: uffizzi/devopsdays-rdu-2022-loadbalancer
       - name: Build and Push Image to Docker Hub
         uses: docker/build-push-action@v2
         with:
